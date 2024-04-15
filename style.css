@@ -461,6 +461,44 @@ h1.main-row-h1{
     object-fit: cover;
 }
 
+       form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+
+        input, textarea, button{
+            width: 500px;
+            height: auto;
+            padding: 22px 15px;
+            margin: 4px;
+            font-size: 14px;
+            letter-spacing: .1px;
+            outline: none;
+            border: 0.5px solid #292929;
+            background: #ebebeb;
+            color: #292929;
+        }
+
+        textarea{
+            height: 130px;
+        }
+
+        button{
+            background: #292929;
+            color: #ebebeb;
+            cursor: pointer;
+            transition: all 0.08s cubic-bezier(0.57, 0, 0.75, 0.75);
+        }
+
+        button:hover{
+            background: transparent;
+            color: #292929;
+        }
+
 .main-container-h1{
     font-size: 1.777rem;
     text-transform: uppercase;
@@ -814,6 +852,10 @@ i{
         align-items: flex-end;
     }
 
+            input, textarea, button{
+                width: 300px;
+            }
+    
     footer{
         display: none !important;
     }
